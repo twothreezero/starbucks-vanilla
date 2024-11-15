@@ -47,7 +47,7 @@ header .sub-menu ul.menu li::before {
   /* display: block; */
   width: 1px;
   height: 12px;
-  background-color: #000;
+  background-color: #e5e5e5;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -57,7 +57,6 @@ header .sub-menu ul.menu li:first-child::before {
   display: none;
 }
 header .sub-menu ul.menu li a {
-  background-color: #fff;
   font-size: 12px;
   padding: 11px 16px;
   display: block;
@@ -67,6 +66,7 @@ header .sub-menu ul.menu li a:hover {
   color: #000;
 }
 header .sub-menu .search {
+  background-color: red;
 }
 header .sub-menu .search input {
 }
