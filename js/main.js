@@ -15,3 +15,20 @@ searchInputEl.addEventListener("blur", function () {
   searchEl.classList.remove("focused");
   searchInputEl.setAttribute("placeholder", "");
 });
+
+// Badges style
+const badgeEl = document.querySelector("header .badges");
+
+window.addEventListener(
+  "scroll",
+  // _.throttel(함수, 시간)
+  _.throttle(function () {
+    if (window.scrollY > 500) {
+      // 배지 숨기기
+      badgeEl.style.display = "none";
+    } else {
+      // 배지 보이기
+      badgeEl.style.display = "block";
+    }
+  }, 300)
+);
