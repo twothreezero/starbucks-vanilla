@@ -289,8 +289,8 @@ header .badges .badge {
 }
 
 /* NOTICE */
-.notice {
-}
+/* .notice {
+} */
 .notice .notice-line {
   position: relative;
 }
@@ -327,10 +327,17 @@ header .badges .badge {
   font-weight: 700;
   margin-right: 20px;
 }
-.notice .notice-line .inner__left .swiper-container {
-  background-color: orange;
+.notice .notice-line .inner__left .swiper {
   flex-grow: 1;
   height: 62px;
+}
+.notice .notice-line .inner__left .swiper .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+.notice .notice-line .inner__left .swiper .swiper-slide a {
+  color: #fff;
 }
 .notice .notice-line .inner__left .notice-line__more {
   width: 62px;
