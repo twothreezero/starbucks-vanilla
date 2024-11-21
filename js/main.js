@@ -18,6 +18,7 @@ searchInputEl.addEventListener("blur", function () {
 
 // Badges style
 const badgeEl = document.querySelector("header .badges");
+const toTopEl = document.querySelector("#to-top");
 
 window.addEventListener(
   "scroll",
@@ -31,6 +32,10 @@ window.addEventListener(
         opacity: 0,
         display: "none",
       });
+      // To top 버튼 보이기
+      gsap.to(toTopEl, 0.2, {
+        x: 0,
+      });
     } else {
       // 배지 보이기
       // badgeEl.style.display = "block";
@@ -38,9 +43,20 @@ window.addEventListener(
         opacity: 1,
         display: "block",
       });
+      // To top 버튼 숨기기
+      gsap.to(toTopEl, 0.2, {
+        x: 100,
+      });
     }
   }, 300)
 );
+
+// to top handler
+toTopEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
+  });
+});
 
 // Visual
 const fadeEls = document.querySelectorAll(".visual .fade-in");
