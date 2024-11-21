@@ -51,8 +51,8 @@ fadeEls.forEach(function (fadeEl, index) {
   });
 });
 
-// NOTICE
 // Slide
+// NOTICE
 // new Swiper(선택자, 옵션)
 new Swiper(".notice-line .swiper", {
   direction: "vertical",
@@ -89,6 +89,18 @@ promotionToggleBtn.addEventListener("click", function () {
     // 보임 처리
     promotionEl.classList.remove("hide");
   }
+});
+
+// AWARDS
+new Swiper(".awards .swiper", {
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigation: {
+    prevEl: ".awards .swiper-button-prev",
+    nextEl: ".awards .swiper-button-next",
+  },
 });
 
 // YOUTUBE
