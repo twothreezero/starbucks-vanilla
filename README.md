@@ -2,7 +2,8 @@
 
 > 간단하게 만들어본 스타벅스 클론 코딩입니다.
 
-![메인](./images/thumbnail_starbucks.png)
+![메인](./images/thumbnail_starbucks.png)  
+<a href="https://starbuck-clone-ttz.netlify.app/" target="_blank">새 탭에서 열기</a>
 
 ## 주요 작업
 
